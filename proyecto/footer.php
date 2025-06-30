@@ -6,7 +6,7 @@
             <a href="#" class="mx-2 text-light"><i class="bi bi-twitter"></i></a>
             <a href="#" class="mx-2 text-light"><i class="bi bi-instagram"></i></a>
             <a href="#" class="mx-2 text-light"><i class="bi bi-discord"></i></a>
-            <a href="https://github.com" class="mx-2 text-light" target="_blank" rel="noopener">
+            <a href="https://github.com/Martin13025/IndiePlay.git" class="mx-2 text-light" target="_blank" rel="noopener">
                 <i class="bi bi-github"></i>
             </a>
         </div>
