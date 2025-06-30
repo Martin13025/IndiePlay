@@ -1,0 +1,33 @@
+.card-game {
+  background: linear-gradient(135deg, #1b2838, #2a475e);
+  border: none;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  color: #ffffff;
+  box-shadow: 0 6px 16px rgba(74, 144, 226, 0.3);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.bg-dark {
+  background-color: #0b121a !important;
+}
+
+.card-game:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 24px rgba(137, 209, 22, 0.3);
+}
+
+.card-game img {
+  height: 450px;
+  object-fit: cover;
+  border-radius: 0.6rem 0.6rem 0 0;
+}
+
+.indie-footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(18px);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.95rem;
+  color: #ccc;
+}
