@@ -1,4 +1,5 @@
 <?php
+http_response_code(404);
 include 'conexion.php';
 $conf = mysqli_query($conexion, "SELECT logo FROM configuracion WHERE id = 1");
 $logo = mysqli_fetch_assoc($conf)['logo'];
