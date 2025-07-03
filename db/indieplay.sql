@@ -46,6 +46,6 @@ CREATE TABLE IF NOT EXISTS configuracion (
     id INT PRIMARY KEY,
     logo VARCHAR(255) NOT NULL
 );
-)
+
 INSERT INTO configuracion (id, logo) VALUES
 (1, 'assets/img/logo.png');
