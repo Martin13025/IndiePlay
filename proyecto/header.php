@@ -1,5 +1,7 @@
 <?php
+session_start();
 include 'conexion.php';
+
 $conf = mysqli_query($conexion, "SELECT logo FROM configuracion WHERE id = 1");
 $logo = mysqli_fetch_assoc($conf)['logo'];
 ?>
@@ -26,6 +28,7 @@ $logo = mysqli_fetch_assoc($conf)['logo'];
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="menuNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
@@ -37,6 +40,20 @@ $logo = mysqli_fetch_assoc($conf)['logo'];
                 <li class="nav-item">
                     <a class="nav-link" href="contact.php">Contacto</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bienvenida.php">Profile</a>
+                </li>
+
+                <?php if (isset($_SESSION['usuario_id'])): ?>
+
+                <?php else: ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.php">Iniciar sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.php">Registrarse</a>
+                    </li>
+                <?php endif; ?>
             </ul>
         </div>
     </div>
