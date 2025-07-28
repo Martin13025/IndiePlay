@@ -49,3 +49,12 @@ CREATE TABLE IF NOT EXISTS configuracion (
 
 INSERT INTO configuracion (id, logo) VALUES
 (1, 'assets/img/logo.png');
+
+CREATE TABLE IF NOT EXISTS usuarios (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre_usuario VARCHAR(50) UNIQUE NOT NULL,
+  correo_electronico VARCHAR(100) UNIQUE NOT NULL,
+  contrasena VARCHAR(255) NOT NULL,
+  rol ENUM('admin', 'usuario') DEFAULT 'usuario',
+  creado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
