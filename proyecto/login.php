@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <body class="container mt-5">
     <h2>Ingreso</h2>
-
+    <p>Para acceder al admin panel ingresa nombre de usuario: admin y contraseña: qwerty</p>
     <?php if ($errores): ?>
         <div class="alert alert-danger">
             <ul>
@@ -73,5 +73,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <a href="register.php" class="btn btn-link">Registrarse</a>
     </form>
 </body>
+
 
 </html>
