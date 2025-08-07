@@ -73,6 +73,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <a href="register.php" class="btn btn-link">Registrarse</a>
     </form>
 </body>
-
-
 </html>
