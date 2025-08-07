@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
 
-        header("Location: admin_usuarios.php");
+        header("Location: admin.php");
         exit;
     }
 } else {
@@ -75,5 +75,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <a href="admin.php" class="btn btn-secondary">Cancelar</a>
     </form>
 </body>
+
 
 </html>
